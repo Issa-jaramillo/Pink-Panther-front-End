@@ -81,8 +81,4 @@
 4. Haz push a tu rama: `git push origin nombre-de-la-rama`
 5. Crea un pull request en GitHub.
 
-## Licencia
-Descripción de la licencia de la aplicación.
 
-## Contacto
-Puedes contactarme en [correo electrónico] para cualquier consulta o sugerencia.
