@@ -1,13 +1,16 @@
-
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
-function App() {
 
+
+
+export default function App() {
   return (
-    <>
-    <div>PinkPanther</div>
-    </>
-  )
+    <div>
+      <Routes>
+        
+      
+      </Routes>
+    </div>
+  );
 }
-
-export default App
