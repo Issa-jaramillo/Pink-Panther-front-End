@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .productImage {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .mainImage {
+    height: 30rem;
+    width: 30rem;
+    margin: 20px;
+  }
+  
+  .productDetails {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  
