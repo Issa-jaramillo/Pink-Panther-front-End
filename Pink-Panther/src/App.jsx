@@ -1,16 +1,15 @@
-import { Route, Routes } from 'react-router-dom'
+
 import './App.css'
+import { DetailPage } from './components/DetailPage/DetailPage'
+import { Footer } from './components/Footer/Footer'
 
 
 
 
 export default function App() {
   return (
-    <div>
-      <Routes>
-        
-      
-      </Routes>
-    </div>
-  );
+    <>
+    <div>PinkPanther</div>
+    </>
+  )
 }
