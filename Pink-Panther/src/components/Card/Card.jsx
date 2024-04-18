@@ -1,13 +1,14 @@
 // Importa los estilos y las dependencias necesarias
 import style from './Card.module.css';
 import { Link } from 'react-router-dom';
+import remera from "../../../public/remera.jpeg";
 
 // Define y exporta la función del componente Card
 export default function Card({ id, name, categoryName, subcategoryName, color, priceEfectivo, size, quantity, photo}) {
    return (
       <div className={style.card}>
          <h3 className={style.h3}>{name}</h3>
-         <img className={style.image} src={photo} alt={`${name} Photo`} />
+         <img className={style.image} src={remera} alt={`${name} Photo`} /> {/* Usamos la imagen del producto proporcionada en DetailPage */}
          <h4 className={style.h4}>Category: {categoryName}</h4>
          <h4 className={style.h4}>Subcategory: {subcategoryName}</h4>
          <h4 className={style.h4}>Color: {color}</h4>
