@@ -1,3 +1,4 @@
+
 import React from "react";
 import { DetailPage } from "../DetailPage/DetailPage";
 
@@ -14,3 +15,4 @@ const Card = ({ products }) => {
 };
 
 export default Card;
+
