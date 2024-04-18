@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { getProducts, changePage } from '../../Redux/actions'; // Importa las acciones de Redux
+import { getProducts, changePage } from '/Redux/Actions/actionTypes'; // Importa las acciones de Redux
 import { useDispatch, useSelector } from 'react-redux';
+import { actionTypes } from '../../Redux/Actions/actionTypes';
 
 function Paginator({ perPage = 9 }) {
     const dispatch = useDispatch(); // Hook useDispatch para enviar acciones a Redux
