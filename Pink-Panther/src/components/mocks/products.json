@@ -1,0 +1,94 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Leggings Deportivos",
+            "description": "Leggings deportivos para mujer, ideales para entrenamientos de alta intensidad o yoga.",
+            "price": 25.99,
+            "discountPercentage": 5,
+            "rating": 4.8,
+            "stock": 50,
+            "brand": "FitSport",
+            "category": "ropa-deportiva",
+            "thumbnail": "https://via.placeholder.com/150",
+            "images": [
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/150"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Top Deportivo",
+            "description": "Top deportivo sin mangas, cómodo y transpirable, perfecto para correr o entrenamientos de cardio.",
+            "price": 19.99,
+            "discountPercentage": 0,
+            "rating": 4.5,
+            "stock": 35,
+            "brand": "ActiveLife",
+            "category": "ropa-deportiva",
+            "thumbnail": "https://via.placeholder.com/150",
+            "images": [
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/150"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Shorts Deportivos",
+            "description": "Shorts deportivos para mujer, con tejido elástico y transpirable, ideales para entrenamientos al aire libre.",
+            "price": 15.99,
+            "discountPercentage": 10,
+            "rating": 4.2,
+            "stock": 40,
+            "brand": "FlexFit",
+            "category": "ropa-deportiva",
+            "thumbnail": "https://via.placeholder.com/150",
+            "images": [
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/150"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Zapatillas Running",
+            "description": "Zapatillas deportivas para correr, con tecnología de amortiguación y soporte para el pie.",
+            "price": 49.99,
+            "discountPercentage": 15,
+            "rating": 4.9,
+            "stock": 25,
+            "brand": "RunMax",
+            "category": "calzado-deportivo",
+            "thumbnail": "https://via.placeholder.com/150",
+            "images": [
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/150"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Sudadera Deportiva",
+            "description": "Sudadera deportiva para mujer, con capucha ajustable y bolsillo canguro, ideal para entrenamientos en días fríos.",
+            "price": 29.99,
+            "discountPercentage": 0,
+            "rating": 4.7,
+            "stock": 30,
+            "brand": "WarmUp",
+            "category": "ropa-deportiva",
+            "thumbnail": "https://via.placeholder.com/150",
+            "images": [
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/300",
+                "https://via.placeholder.com/150"
+            ]
+        }
+    ]
+}

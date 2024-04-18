@@ -1,45 +1,42 @@
 import React from 'react';
 import styles from './DetailPage.module.css';
-import remera from "../../../public/remera.jpeg"
 
-export const DetailPage = () => {
+import { AddToCartIcon, ClearCartIcon, CartIcon } from '../icons/Icons'; // Importa los iconos
 
+export const DetailPage = ({ product }) => {
   return (
     <div className={styles.container}>
       <div>
-        <img src={remera} className={styles.productImage} alt="" />
+        <img src={product.thumbnail} className={styles.productImage} alt={product.title} />
       </div>
       <div>
-        <img src={remera} className={styles.mainImage} alt='' />
+        <img src={product.images[0]} className={styles.mainImage} alt={product.title} />
       </div>
       <div>
-        <h2 className='text-3xl font-bold underline'>Remera</h2>
+        <h2 className='text-3xl font-bold underline'>{product.title}</h2>
         <div className={styles.productDetails}>
+          <div>{product.brand}</div>
+          <div>{product.category}</div>
+          <div>{product.rating} reseñas</div>
+          <div>{product.stock} disponibles</div>
           <div>xxxx</div>
-          <div>xxxx</div>
-          <div>32 reseñas</div>
-          <div>xxxx</div>
-          <div>153 ventas</div>
           <div>xxxx</div>
         </div>
-        <h4>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-          ullam fugit enim ipsa nam minus assumenda molestias qui dolore vero
-          sint, eum hic laudantium, quae iste cupiditate mollitia quis
-          praesentium?
-        </h4>
+        <h4>{product.description}</h4>
         <label className={styles.price} htmlFor="">
-          $40.000
+          ${product.price * (1 - product.discountPercentage / 100)}
         </label>
         <div>
           <div className='flex bg-black'>
-            <button>1</button>
             <button>Agregar al carrito</button>
-            <button>fav</button>
+            <button><AddToCartIcon /></button> {/* Agrega el icono de agregar al carrito */}
+            <button><ClearCartIcon /></button> {/* Agrega el icono de limpiar carrito */}
           </div>
-          <button>Comprar</button>
+          <button>Comprar  <CartIcon /> </button> {/* Agrega el icono del carrito */}
         </div>
       </div>
     </div>
   );
 };
+
+export default DetailPage;
