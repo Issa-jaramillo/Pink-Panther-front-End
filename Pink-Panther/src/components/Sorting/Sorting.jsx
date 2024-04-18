@@ -1,18 +1,3 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setSortOption, setFilteredProducts, setPageNumber } from '../../Redux/Actions/actions';
-import styles from './Sorting.module.css';
-
-const sortingOptions = [
-   { value: 'ASC', label: 'Price: Low to High' },
-   { value: 'DESC', label: 'Price: High to Low' },
-   { value: 'COLOR', label: 'Color' },
-   { value: 'SIZE', label: 'Size' },
-   { value: 'CATEGORY', label: 'Category' },
-   { value: 'SUBCATEGORY', label: 'Subcategory' },
-   { value: 'FAVORITES', label: 'Favorites' },
-   { value: 'REVIEWS', label: 'Reviews' }
-];
 
 export default function Sorting() {
    const dispatch = useDispatch();
