@@ -1,77 +1,73 @@
 
-// Importar los tipos de acciones
 import { actionTypes } from '../Actions/actionTypes';
 
-
-// Definir el estado inicial del reducer
+// Definiendo el estado inicial para los filtros.
 const initialState = {
-  selectedCategory: null,       // Categoría seleccionada
-  selectedSubcategory: null,    // Subcategoría seleccionada
-  priceSort: null,              // Orden de precio
-  selectedColor: null,          // Color seleccionado
-  selectedSize: null,           // Tamaño seleccionado
-  alphabeticalSort: null,       // Orden alfabético
-  popularSort: false,           // Orden de popularidad
-  newestSort: false,            // Orden de novedad
+  selectedCategory: null,          // Categoría seleccionada
+  selectedSubcategory: null,       // Subcategoría seleccionada
+  priceSort: null,                 // Orden de precio
+  selectedColor: null,             // Color seleccionado
+  selectedSize: null,              // Tamaño seleccionado
+  alphabeticalSort: null,          // Orden alfabético
+  popularSort: false,              // Orden popular (inicializado como falso)
+  newestSort: false,               // Orden más nuevo (inicializado como falso)
+  currentPage: 1,                  // Página actual (inicializada como 1)
+  totalPages: 1,                   // Total de páginas (inicializado como 1)
 };
 
-// Reducer para gestionar los filtros
+// Reductor para manejar los cambios en el estado de los filtros.
 const filtersReducer = (state = initialState, action) => {
   switch (action.type) {
-    // Cuando se selecciona una categoría
     case actionTypes.SELECT_CATEGORY:
       return {
         ...state,
-        selectedCategory: action.payload,  // Actualizar la categoría seleccionada
+        selectedCategory: action.payload,  // Actualiza la categoría seleccionada
       };
-    // Cuando se selecciona una subcategoría
     case actionTypes.SELECT_SUBCATEGORY:
       return {
         ...state,
-        selectedSubcategory: action.payload, // Actualizar la subcategoría seleccionada
+        selectedSubcategory: action.payload,  // Actualiza la subcategoría seleccionada
       };
-    // Cuando se establece el orden de precio
     case actionTypes.SET_PRICE_SORT:
       return {
         ...state,
-        priceSort: action.payload,  // Actualizar el orden de precio
+        priceSort: action.payload,  // Establece el orden de precio
       };
-    // Cuando se selecciona un color
     case actionTypes.SELECT_COLOR:
       return {
         ...state,
-        selectedColor: action.payload, // Actualizar el color seleccionado
+        selectedColor: action.payload,  // Actualiza el color seleccionado
       };
-    // Cuando se selecciona un tamaño
     case actionTypes.SELECT_SIZE:
       return {
         ...state,
-        selectedSize: action.payload,  // Actualizar el tamaño seleccionado
+        selectedSize: action.payload,  // Actualiza el tamaño seleccionado
       };
-    // Cuando se establece el orden alfabético
     case actionTypes.SET_ALPHABETICAL_SORT:
       return {
         ...state,
-        alphabeticalSort: action.payload,  // Actualizar el orden alfabético
+        alphabeticalSort: action.payload,  // Establece el orden alfabético
       };
-    // Cuando se establece el orden de popularidad
     case actionTypes.SET_POPULAR_SORT:
       return {
         ...state,
-        popularSort: !state.popularSort,  // Invertir el orden de popularidad y desactivar el orden de novedad
-        newestSort: false,                // Desactivar el orden de novedad
+        popularSort: !state.popularSort,  // Invierte el estado de orden popular
+        newestSort: false,                // Restablece el estado de orden más nuevo a falso
       };
-    // Cuando se establece el orden de novedad
     case actionTypes.SET_NEWEST_SORT:
       return {
         ...state,
-        newestSort: !state.newestSort,  // Invertir el orden de novedad y desactivar el orden de popularidad
-        popularSort: false,             // Desactivar el orden de popularidad
+        newestSort: !state.newestSort,  // Invierte el estado de orden más nuevo
+        popularSort: false,             // Restablece el estado de orden popular a falso
       };
-    // Por defecto, retornar el estado sin modificar
+    case actionTypes.CHANGE_PAGE:
+      return {
+        ...state,
+        currentPage: action.payload,  // Cambia la página actual
+      };
     default:
-      return state;
+      return state;  // Devuelve el estado sin cambios si no hay acciones coincidentes
   }
 };
 
-export default filtersReducer;  // Exportar el reducer
+export default filtersReducer;  

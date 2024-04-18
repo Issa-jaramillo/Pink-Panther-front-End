@@ -1,4 +1,3 @@
-// Importa los estilos y las dependencias necesarias
 import style from './Card.module.css';
 import { Link } from 'react-router-dom';
 import remera from "../../../public/remera.jpeg";
@@ -12,7 +11,7 @@ export default function Card({ id, name, categoryName, subcategoryName, color, p
          <h4 className={style.h4}>Categoria: {categoryName}</h4>
          <h4 className={style.h4}>Subcategoria: {subcategoryName}</h4>
          <h4 className={style.h4}>Color: {color}</h4>
-         <h4 className={style.h4}>Precio Efectivo: {priceEfectivo}</h4>
+         <h4 className={style.h4}>Precio: {priceEfectivo}</h4>
          <h4 className={style.h4}>Talle: {size}</h4>
          <h4 className={style.h4}>Cantidad: {quantity}</h4>
          {/* Enlace a la página de detalles del producto */}

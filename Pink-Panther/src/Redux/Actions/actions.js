@@ -1,4 +1,5 @@
-import { actionTypes } from "src.Redux.Actions.actionTypes";
+
+import { actionTypes } from './actionTypes';
 
 // Acciones para seleccionar categoría y subcategoría
 export const selectCategory = (category) => ({
@@ -40,4 +41,10 @@ export const setPopularSort = () => ({
 
 export const setNewestSort = () => ({
   type: actionTypes.SET_NEWEST_SORT,
+});
+
+// Acción para cambiar la página
+export const changePage = (pageNumber) => ({
+  type: actionTypes.CHANGE_PAGE,
+  payload: pageNumber,
 });
