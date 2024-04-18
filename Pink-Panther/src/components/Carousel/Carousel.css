@@ -1,0 +1,23 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+  
+  .carousel-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    max-height: auto;
+  }
+  
