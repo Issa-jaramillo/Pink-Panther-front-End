@@ -1,23 +1,24 @@
-import React from 'react';
-import './App.css';
-import { Footer } from './components/Footer/Footer';
-import Card from './components/Card/Card';
+import React from 'react'
+import './App.css'
+import { Footer } from './components/Footer/Footer'
 import { products as initialProducts } from '../src/components/mocks/products.json';
+import Cards from './components/Cards/Cards';
 
 function App() {
+
   return (
     <>
-      <div>
-        <h1 className="text-3xl font-bold underline">PinkPanther</h1>
+    <div>
+      <h1>PinkPanther</h1>
       </div>
-      <div>
-        <Card products={initialProducts} />
-      </div>
-      <div>
-        <Footer />
-      </div>
+    <div>
+    <Cards products={initialProducts} />
+    </div>
+    <div>
+    <Footer/>
+    </div>
     </>
-  );
+  )
 }
 
 export default App
